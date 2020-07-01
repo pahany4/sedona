@@ -27,7 +27,7 @@ button {
     background-color: transparent;
 }
 
-img.maket {
+/*img.maket {
     position: absolute;
     z-index: 10;
     opacity: .5;
@@ -35,7 +35,7 @@ img.maket {
     left: 0;
     right: 0;
     bottom: 0;
-}
+}*/
 
 html,
 body {
@@ -79,7 +79,7 @@ img {
     position: absolute;
     right: 18px;
     bottom: 35px;
-    z-index: 2;
+    z-index: 4;
 }
 
 .menu-hid,
