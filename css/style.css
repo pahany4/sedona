@@ -27,16 +27,6 @@ button {
     background-color: transparent;
 }
 
-/*img.maket {
-    position: absolute;
-    z-index: 10;
-    opacity: .5;
-    top: 0px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}*/
-
 html,
 body {
     margin: 0;
@@ -82,7 +72,10 @@ img {
     z-index: 4;
 }
 
-.menu-hid,
+.menu-hid {
+    margin-top: -224px;
+}
+
 .menu-icon_hid,
 .form-search_hid {
     display: none;
@@ -97,11 +90,44 @@ img {
 nav ul {
     margin: 0;
     padding-left: 0;
+
 }
 
 nav li {
     list-style: none;
     box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.menu-open {
+    animation-name: menu-open;
+    animation-duration: 2s;
+
+}
+
+.menu-close {
+    animation-name: menu-close;
+    animation-duration: 2s;
+
+}
+
+@keyframes menu-open {
+    0% {
+        margin-top: -224px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+@keyframes menu-close {
+    0% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: -224px;
+    }
 }
 
 .item5 {
@@ -692,7 +718,7 @@ footer {
     .Adults-search {
         margin-right: 77px;
         margin-top: 10px;
-        margin-left: 0;
+        margin-left: 44px;
 
     }
 
@@ -706,7 +732,7 @@ footer {
 
     .children-search {
         margin-right: 0px;
-        margin-left: 0;
+        margin-left: 24px;
     }
 
     input.btn-submit {
