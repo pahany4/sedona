@@ -334,7 +334,7 @@ h3 {
 }
 
 .form-closed {
-    margin-top: -404px;
+    margin-top: -410px;
 }
 
 .form-open {
@@ -349,7 +349,7 @@ h3 {
 
 @keyframes form-open {
     0% {
-        margin-top: -404px;
+        margin-top: -410px;
     }
 
     100% {
@@ -363,7 +363,7 @@ h3 {
     }
 
     100% {
-        margin-top: -404px;
+        margin-top: -410px;
     }
 }
 
