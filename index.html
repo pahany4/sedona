@@ -29,7 +29,7 @@
                     </li>
                     <li class="item5">
                         <img src="icon/logotyle-mobile.svg" alt="логотип" class="logo" width="102" height="83">
-                        <div autofocus class="menu-icon menu-icon_hid"></div>
+                        <button autofocus class="menu-icon menu-icon_hid" aria-label="Кнопка открытия меню"></button>
                     </li>
                 </ul>
 
@@ -103,30 +103,35 @@
                 <p class="offer2">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
                     седоне
                 </p>
-                <button class="btn">
-                    Найти гостиницу
-                </button>
-                <div class="form-search">
-                    <form action="">
-                        <label for="check-in">Дата заезда</label>
-                        <input class="check-in" type="date" name="" id="check-in">
+                <div>
+                    <button class="btn" aria-label="Кнопка для открытия формы поиска гостиницы">
+                        Найти гостиницу
+                    </button>
+                    <div class="form-search">
+                        <form action="">
+                            <div class="form-container">
+                                <label for="check-in">Дата заезда</label>
+                                <input class="check-in" type="date" name="" id="check-in">
 
-                        <label for="check-out">Дата выезда</label>
-                        <input class="check-out" type="date" name="" id="check-out">
-                        <label for="Adults">Взрослые</label>
-                        <div class="Adults-search people-search">
-                            <button class="btn-minus"><span>-</span></button>
-                            <input class="Adults people" type="text" id="Adults">
-                            <button class="btn-plus"><span>+</span></button>
-                        </div>
-                        <label for="children">Дети</label>
-                        <div class="children-search people-search">
-                            <button class="btn-minus"><span>-</span></button>
-                            <input class="Adults people" type="text" id="children">
-                            <button class="btn-plus"><span>+</span></button>
-                        </div>
-                        <input type="submit" value="НАЙТИ" class="btn btn-submit">
-                    </form>
+                                <label for="check-out">Дата выезда</label>
+                                <input class="check-out" type="date" name="" id="check-out">
+                                <label for="Adults">Взрослые</label>
+                                <div class="Adults-search people-search">
+                                    <button class="btn-minus"><span>-</span></button>
+                                    <input class="Adults people" type="text" id="Adults" value="0">
+                                    <button class="btn-plus"><span>+</span></button>
+                                </div>
+                                <label for="children">Дети</label>
+                                <div class="children-search people-search">
+                                    <button class="btn-minus"><span>-</span></button>
+                                    <input class="Adults people" type="text" id="children" value="0">
+                                    <button class="btn-plus"><span>+</span></button>
+                                </div>
+                            </div>
+                            <input type="submit" value="НАЙТИ" class="btn btn-submit">
+
+                        </form>
+                    </div>
                 </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1685907.8872176332!2d-112.3532947879957!3d34.38129045778668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1590159816385!5m2!1sru!2sru"

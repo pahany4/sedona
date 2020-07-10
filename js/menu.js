@@ -14,7 +14,7 @@ var clk = 0;
 function menuOpen() {
     burgerHid.addEventListener('click',
         function (evt) {
-            evt.preventDefault;
+            evt.preventDefault();
             this.classList.toggle('menu-icon_activ');
             if (clk % 2 == 0) {
                 menuVisible.classList.remove('menu-hid');
