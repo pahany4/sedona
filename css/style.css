@@ -858,6 +858,10 @@ footer {
         height: 66%;
     }
 
+    .logo {
+        height: 78px;
+    }
+
     h3 {
         line-height: 2.3vw;
         font-size: 1.62vw;
